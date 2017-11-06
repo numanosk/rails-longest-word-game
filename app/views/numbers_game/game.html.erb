@@ -1,0 +1,15 @@
+<h1>NumbersGame#game</h1>
+
+<h1><%= @random_grid %></h1>
+
+<form action="/score">
+  <label for="answer">Type an answer</label>
+  <input type="text" id="answer"  name="answer" placeholder="Type an answer">
+  <input type="submit">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="hidden" name="random_grid" value="<%= @random_grid %>">
+</form>
+
+
+<h2><%= link_to "Back to input", '/input' %></h2>
+
